@@ -6,14 +6,12 @@ A simple Java digital clock developed using Netbeans IDE
 
 ## Code of DigitalCLock() Function : 
 
-,,,
+
  public DigitalClock() {
         initComponents();
         new Thread(){
-            public void run(){
-                
+            public void run(){ 
                 while(true){
-                  
                     Calendar cal=new GregorianCalendar();
                     int hour=cal.get(Calendar.HOUR);
                     int min=cal.get(Calendar.MINUTE);
@@ -21,8 +19,7 @@ A simple Java digital clock developed using Netbeans IDE
                   
                     int AM_PM=cal.get(Calendar.AM_PM);
                     String Am_Pm="";
-                    if(AM_PM==1){
-                        
+                    if(AM_PM==1){ 
                         Am_Pm="PM";
                     }
                     else{
@@ -33,6 +30,6 @@ A simple Java digital clock developed using Netbeans IDE
             }
         }.start();
     }
-,,,
+
 
 
